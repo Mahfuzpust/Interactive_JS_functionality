@@ -1,0 +1,17 @@
+var myVar = document.querySelector("h1");
+myVar.addEventListener("mouseover", () => {
+    newFunction()
+})
+
+myVar.addEventListener("mouseout", () => {
+    newFunction2()
+})
+
+
+function newFunction(){
+  myVar.classList.add("my-style");
+}
+
+function newFunction2(){
+    myVar.classList.remove("my-style");
+  }
