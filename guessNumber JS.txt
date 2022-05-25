@@ -1,0 +1,21 @@
+
+var numOfWon = 0;
+var numOfLost =0;
+
+for(var i=0;i<5;i++){
+    var guessNumber = parseInt(prompt("Enter the number : "));
+
+    var randomNumber = Math.floor(Math.random()*5) + 1;
+    
+    if(guessNumber == randomNumber){
+        console.log("you have won");
+        numOfWon++;
+    }
+    else{
+        console.log("you lost. The random number is : ", + randomNumber);
+        numOfLost++;
+    }
+}
+
+console.log("you won : ", + numOfWon);
+console.log("you lost : ", + numOfLost);
