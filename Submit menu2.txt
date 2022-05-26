@@ -1,0 +1,23 @@
+//HTML
+
+<input id ="numb">
+   <button type="button" onclick="myFunction()">Submit</button>
+   <p id ="demo"></p>
+
+//JS
+
+function myFunction(){
+  const form = document.getElementById("numb").value;
+
+  let value1;
+
+  if (isNaN(form) || form <1 || form >10){
+    value1 = "Input not valid";
+  }
+  else {
+    value1 = "Valid";
+  }
+
+document.getElementById('demo').innerHTML= value1;;
+
+}
