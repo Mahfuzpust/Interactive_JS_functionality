@@ -1,0 +1,21 @@
+//HTML
+
+<form name ="myForm" onsubmit="return validForm()">
+        Name : <input type="text" name="fname"> <br> <br>
+               <input id ="new1" type="submit" value="Submit">
+               <input id ="new2" type="reset" value ="Reset">
+    </form>
+
+//JS
+
+function validForm(){
+  const form = document.forms['myForm'];
+  const val = form['fname'].value;
+
+  if(val==""){
+    alert("name must be fill out");
+  }
+  else{
+    return false;
+  }
+}
