@@ -5,6 +5,13 @@
 
     <p id="paraId">This is heading</p>
 
+//CSS
+
+.
+heading{
+       color: red;
+}
+
 
 //JS
 
