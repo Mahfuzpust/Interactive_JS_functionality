@@ -1,0 +1,23 @@
+//HTML
+
+<h1>Clickible Value in this page!!!</h1>
+
+<button class="myButton">Button1</button>
+<button class="myButton">Button2</button>
+<button class="myButton">Button3</button>
+
+// CSS
+
+
+var len = document.querySelectorAll(".myButton").length;
+
+for(var i=0;i<len;i++){
+
+    const val = document.querySelectorAll(".myButton")[i];
+    val.addEventListener("click", function() {
+
+    var text = this.innerHTML;
+    document.querySelector("h1").innerHTML= text + "  is checked";
+});
+
+}
