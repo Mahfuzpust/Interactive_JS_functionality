@@ -1,0 +1,19 @@
+//HTML
+
+<button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button>
+
+    <p id="paraId">This is heading</p>
+
+
+//JS
+
+function addStyle(){
+    const change = document.querySelector("#paraId");
+    change.classList.add("heading");
+}
+
+function removeStyle(){
+    const change = document.querySelector("#paraId");
+    change.classList.remove("heading");
+}
