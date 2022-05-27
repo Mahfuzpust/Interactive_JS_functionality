@@ -1,0 +1,37 @@
+//HTML
+
+    <button class = "myButton">song1</button>
+    <button class = "myButton">song1</button>
+    <button class = "myButton">song1</button>
+
+//JS
+
+for(var i=0;i<3;i++){
+
+    const val = document.querySelectorAll(".myButton")[i];
+    val.addEventListener("click", function() {
+
+    var text = this.innerHTML;
+    console.log(text);
+
+
+    switch(text){
+        case "song1":
+            var audio = new Audio('song/new.mp3');
+            audio.play();
+            break;
+
+        case "song2":
+            var audio = new Audio('song/new.mp3');
+            audio.play();
+            break;
+
+         case "song3":
+                var audio = new Audio('song/new.mp3');
+                audio.play();
+                break;
+    }
+});
+
+}
+
