@@ -1,0 +1,23 @@
+//HTML
+
+<button>click me</button>
+
+//JS
+
+ const val1 = document.querySelector('button');
+ val1.addEventListener('click', myFunction); //Function
+
+
+ function myFunction(){
+     alert("hello Bangladesh1");
+ }
+
+ const val2 = document.querySelector('button');
+ val.addEventListener('click', function(){  //anonymous function
+     alert("Hellow Bangladesh2");
+ })
+
+const val3 = document.querySelector('button');
+val.addEventListener('click', () =>{  //Arrow Function
+    alert("Hello Bangladesh3");
+})
