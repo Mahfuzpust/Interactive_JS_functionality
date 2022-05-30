@@ -1,0 +1,33 @@
+//HTML
+
+<div>
+    <p>This is div</p>
+</div>
+
+//JS
+
+const val = document.querySelector('div');
+
+val.addEventListener('click', function(e){
+   console.log(e.target.innerText);
+});
+
+val.addEventListener('dblclick', function(){
+   console.log('dddclick');
+});
+
+val.addEventListener('mouseup', function(){
+   console.log('mouseup');
+});
+
+val.addEventListener('mousedown', function(){
+   console.log('mousedown');
+});
+
+val.addEventListener('mouseover', function(){
+   console.log('mousedown');
+});
+
+val.addEventListener('mousemove', function(){
+   console.log('mousedown');
+});
