@@ -1,0 +1,30 @@
+// Anonymous function ==> this are not comfortabe assign new value
+
+const number1 ={
+    courseName: "javascript",
+    allCourse: ['react', 'angular', 'vue'],
+    libraries: function(){
+        var self = this;
+        number1.allCourse.forEach(function(a){
+            console.log(`${self.courseName} and ${a}`);
+        })
+    }
+};
+
+number1.libraries();
+
+
+
+//Arrow functon ==> this are using comfortable
+
+const number2 ={
+    courseName: "javascript",
+    allCourse: ['react', 'angular', 'vue'],
+    libraries: function(){
+        number2.allCourse.forEach((a) => {
+            console.log(`${this.courseName} and ${a}`);
+        })
+    }
+};
+
+number2.libraries();
