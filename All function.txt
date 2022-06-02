@@ -1,0 +1,30 @@
+function myFunction1(x){
+console.log(x);
+}
+myFunction1(10);
+
+const myFunction2 = function(y){
+    console.log(y)
+}
+myFunction2(20);
+
+const myFunction3 = (z) => {
+    console.log(z)
+}
+myFunction3(30);
+
+var myFunction4 = function(a,b){
+    return a+b;
+}
+console.log(myFunction4(100,300));
+
+
+var myFunction5 = (a,b) => {
+    return a+b;
+}
+console.log(myFunction5(100,100));
+
+
+const myFunction6 = (a,b) => a+b;
+
+console.log(myFunction6(500,100));
