@@ -1,0 +1,22 @@
+
+var numbers = [2,3,4,5];
+var num = []; 
+numbers.forEach(function(x){
+    num.push(x*x);
+})
+
+console.log(num);
+
+
+var numbers = [2,3,4,5];
+var result = numbers.map(function(x){
+    return x+x;
+})
+console.log(result);
+
+
+var numbers = [2,3,4,5,10,20,,21,50,40,80,20];
+var result = numbers.filter(function(x){
+    return x > 11;
+})
+console.log(result);
