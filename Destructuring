@@ -1,0 +1,37 @@
+const arrValue = ['mahfuz', 'khan', 'Raj'];
+
+let [x,y,z] = arrValue;
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+// program to swap variables
+
+let a = 4;
+let b = 7;
+
+// swapping variables
+[a, b] = [b, a];
+
+console.log(`a = ${a}`); // 7
+console.log(`b = ${b}`); // 4
+
+// assigning object attributes to variables
+const person = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female',
+    language : {
+        native : 'bangla',
+        beginner : "English"
+    }
+}
+
+// destructuring assignment
+let { name, age, gender, language} = person;
+
+console.log(name); // Sara
+console.log(age); // 25
+console.log(gender); // female
+console.log(language);
