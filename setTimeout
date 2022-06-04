@@ -1,0 +1,17 @@
+
+const taskTwo = () => {
+    setTimeout(() => {
+        console.log("I am Mahfuz");
+    }, 2000);
+}
+
+taskTwo();
+
+
+function myFunction(){
+    setTimeout(function newFunction(){
+        console.log("The second time out");
+    }, 3000);
+}
+
+myFunction();
