@@ -1,0 +1,23 @@
+
+function square(x){
+    console.log(x*x);
+}
+
+
+function higherOrder(num, callback){
+    callback(num);
+}
+
+higherOrder(6,square);
+
+
+function callMe(){
+    console.log("I am Mahfuz");
+}
+
+
+function higherOrder(name, callback){
+     callback(name);
+}
+
+higherOrder('new Name', callMe);
