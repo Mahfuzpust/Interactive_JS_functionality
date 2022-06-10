@@ -1,0 +1,18 @@
+let showTime = () => {
+    let dateTime = new Date();
+    console.log(dateTime);
+
+    let time = dateTime.toLocaleTimeString();
+    console.log(time);
+
+    let time2 = dateTime.toDateString();
+    console.log(time2);
+
+    let time3 = dateTime.toLocaleDateString();
+    console.log(time3);
+
+    let time4 = dateTime.toTimeString();
+    console.log(time4);
+}
+
+showTime();
