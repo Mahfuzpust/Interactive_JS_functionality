@@ -1,0 +1,19 @@
+
+let countValue = new Promise(function (resolve, reject) {
+    resolve('Promise resolved'); 
+});
+
+countValue
+.then(
+    function greet() {
+        console.log('This code is executed.');
+    }
+)
+.catch(
+    function greet(){
+        console.log('This code is not executed.');
+    })
+.finally(
+    function greet() {
+        console.log('This code is executed finally.');
+    });
