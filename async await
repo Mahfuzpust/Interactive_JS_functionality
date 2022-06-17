@@ -1,0 +1,21 @@
+
+const promise = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        resolve('set function')
+    },2000)
+});
+
+
+async function asyFunction(){
+    try{
+        let res = await promise;
+
+    console.log(res);
+    console.log("Output");
+    }
+    catch(E){
+        console.log(E);
+    }
+}
+
+asyFunction();
