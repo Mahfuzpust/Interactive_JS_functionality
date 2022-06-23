@@ -1,0 +1,44 @@
+{
+    "sstudents" : 
+[
+
+{
+    "name" : "Mahfuz",
+    "middleName" : null,
+    "age" : 22,
+    "cgpa" : 3.92,
+    "isRegiestered" : true,
+    "langiuage" : ["Bangla", "English", "Hindi"],
+    "friends" : 
+    [
+        {
+            "name" : "MAhfuz",
+            "age" : 22
+        },
+        {
+            "name" : "MAhfuz",
+            "age" : 22
+        }
+    ]
+},
+{
+    "name" : "Mahfuz",
+    "middleName" : null,
+    "age" : 22,
+    "cgpa" : 3.92,
+    "isRegiestered" : true,
+    "langiuage" : ["Bangla", "English", "Hindi"],
+    "friends" : 
+    [
+        {
+            "name" : "MAhfuz",
+            "age" : 22
+        },
+        {
+            "name" : "MAhfuz",
+            "age" : 22
+        }
+    ]
+}
+]
+}
