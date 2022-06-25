@@ -1,0 +1,17 @@
+
+//client to convert server
+ const data = {
+     name : "Mahfuz",
+     age : 23
+ };
+
+ console.log(typeof(data));
+ console.log(JSON.stringify(data));
+
+
+ //server to convert client
+ 
+console.log(JSON.parse('{"name" : "Mahfuz"}'));
+
+
+
