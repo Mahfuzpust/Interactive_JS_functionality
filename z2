@@ -1,0 +1,5 @@
+const val = document.addEventListener("keypress", function(){
+   var text = this.innerHTML;
+
+   document.querySelector("h1").innerHTML = "new JOurney";
+});
